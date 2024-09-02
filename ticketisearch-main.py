@@ -30,5 +30,7 @@ with sync_playwright() as p:
 
     page.click("button[id='btnAddPassengerCTA']") 
 
+    page.click("button[id='btnSearchCTA']")
+
     page.wait_for_timeout(5000)
     browser.close()
